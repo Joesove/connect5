@@ -190,7 +190,7 @@ def main():
 				response = send_recv(player.client, msg)
 
 				msg = {"cmd": "PRINT", "data": "Final board: \n" + str(game)}
-				response = send_recv(player.client, msg)
+				response = send_recv(idle_player.client, msg)
 
 				msg = {"cmd": "PRINT", "data": "Sorry %s! You lose." % idle_player.name}
 				response = send_recv(idle_player.client, msg)
