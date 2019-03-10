@@ -183,13 +183,13 @@ def main():
 			if game.check_win(player.player_num):
 				logging.info("Game won by %s." % player.name)
 
-				msg = {"cmd": "PRINT", "data": "Final board: \n"str(game)}
+				msg = {"cmd": "PRINT", "data": "Final board: \n" + str(game)}
 				response = send_recv(player.client, msg)
 
 				msg = {"cmd": "PRINT", "data": "Congratulations %s! You win." % player.name}
 				response = send_recv(player.client, msg)
 
-				msg = {"cmd": "PRINT", "data": "Final board: \n"str(game)}
+				msg = {"cmd": "PRINT", "data": "Final board: \n" + str(game)}
 				response = send_recv(player.client, msg)
 
 				msg = {"cmd": "PRINT", "data": "Sorry %s! You lose." % idle_player.name}
