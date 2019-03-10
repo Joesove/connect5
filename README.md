@@ -1,8 +1,13 @@
 # connect5
 
-## Setup:
-No setup is required for the client or the server.
-However it is only test against the following:
+## Requirements
+```Python 3```
+```pip```
+```virtualenv```
+
+## Setup
+No specific setup is required for the client or the server.
+However it is only tested against the following:
 ```Python 3.5.2``` on ```Ubuntu 16.04```
 
 The ```game_tester.py``` requires you to install pytest, instructions:
@@ -15,7 +20,7 @@ The ```game_tester.py``` requires you to install pytest, instructions:
 3. Install the required libraries
   ```pip install -r requirements.txt```
   
-## Usage:
+## Usage
 Server:
 ```./server.py```
 
