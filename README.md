@@ -13,7 +13,7 @@ The ```game_tester.py``` requires you to install pytest, instructions:
  ```. env3/bin/activate```
  
 3. Install the required libraries
-  ```pip install requirements.txt```
+  ```pip install -r requirements.txt```
   
 ## Usage:
 Server:
